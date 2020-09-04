@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+	<style>
+		*{
+		margin:  0;
+		padding: 0;
+		}
+
+		a{
+		margin-left: 15%;
+		color: #000;
+		}
+
+		a:hover{
+		background-color:#f22;
+		}
+
+		.menu{
+		width: 100%;
+		height: 50px;
+		background-color:#f55;
+		font-family: 'Arial';
+		font-size: 13px;
+		display: flex;
+		justify-content: center;
+		}
+
+		.menu2{
+		width: 150px;
+		height: 100%;
+		background-color:#f00;
+		font-family: 'Arial';
+		font-size: 13px;
+		position: absolute;
+		margin-left:0px;
+		display: flex;
+		justify-content: center;
+		}
+
+
+		.menu2 ul{
+		padding: 0px;
+		list-style: none;
+		position: relative;
+		align: center;
+		}
+
+		.menu2 ul li{
+		height: 50px;
+		diplay: inline-block;
+		}
+		
+		.menu2 ul ul{
+		display: none;
+		}
+
+		.menu2 ul ul li{
+		border-top: solid 1px #fff;
+		border-bottom: solid 1px #fff;
+		}
+
+		.menu2 ul li:hover > ul{
+		display: block;
+		}
+
+
+		p{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		.menu2 a{
+		margin-left: 0px;
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		background-color:#f00;
+		color: #fff;
+		}
+
+		#bt_menu{
+		display: none;
+		}
+
+		.menu2 a:hover{
+		background-color:#f22;
+		}
+
+		.space1{
+		display: block;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+		}
+
+		.footer {
+		position:fixed;
+		height: 40px;
+		bottom:0px;
+		width:100%;
+		background-color: #fff;
+		}
+
+		label[for="bt_menu"]{
+		padding: 5px;
+		background-color: #f00;
+		color: #fff;
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		display: none;
+		}
+
+		
+	</style>
+</head>
+<body>
+    <header>
+
+    </header>
+	
+
+	
+    <main>
+
+	
+
+	<nav class = "menu">
+	</nav>
+	
+	<nav class="menu2">
+	 <ul>
+            <li><a href="paginaPrincipal.html">Principal</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="trailer.html">Trailers</a></li>
+            <li><a href="trilhaSonora.html">Trilha Sonora</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+	</nav>
+	
+	
+	<div class="space1"></div>
+	<h1><p>Contato</p></h1>    
+
+        <form action="">
+	    <p>Nome</p>
+            <p><label for="nomeContato"><input type="text" id="nomeContato></label></p>
+	    <p>Email</p>
+            <p><label for="emailContato"><input type="email" id="emailContato" ></label></p>
+	    <p>Contato</p>
+            <p><label for="assuntoContato"><input type="text" id="assuntoContato"></label></p>
+            <p>Mensagem</p>
+            <p><label for="mensagem"><textarea  id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea></label></p>
+            
+
+            <p><input type="submit" value="Enviar E-mail"></p>
+        </form>
+
+        <p></p>
+    </main>
+	
+
+
+
+
+
+
+    
+        <p class="footer"> &copy Pedro Henrique Borges Prado e Yuri Pierobon Suheishi Suhet da Silva - Instituto Federal do Sul de Minas Gerais - 2020</p>
+
+</body>
+</html>

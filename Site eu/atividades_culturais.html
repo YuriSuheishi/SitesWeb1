@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yuri</title>
+	<link rel="shortcut icon" type="image/png" href="img/ms-icon-70x70.png">
+	
+	<style>
+		*{
+		margin:  0;
+		padding: 0;
+		}
+		
+		.menu{
+		width: 100%;
+		height: 50px;
+		background-color:#402817;
+		font-family: 'Arial';
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		}
+
+		h2{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		h3{
+		font-family: 'Arial';
+		text-align:center;
+		}
+		
+		a{
+		font-family: 'Arial';
+		color:#000;
+		}
+
+		p{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		ul li{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		.menu ul{
+		padding: 0px;
+		list-style: none;
+		position: relative;
+		align: center;
+		}
+
+		.menu ul li{
+		width: 110px;
+		float: left;
+		diplay: inline-block;
+		line-weught: 50px;
+		}
+		
+		.menu ul ul{
+		display: none;
+		}
+
+		.menu ul ul li{
+		border-top: solid 1px #fff;
+		border-bottom: solid 1px #fff;
+		}
+
+		.menu ul li:hover > ul{
+		display: block;
+		}
+
+		.menu a{
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		background-color:#402817;
+		color: #fff;
+		}
+
+		#bt_menu{
+		display: none;
+		}
+
+		.menu a:hover{
+		background-color:#4b3621;
+		}
+
+		div{
+		display: none;	
+		width: 100%;
+		}
+
+		.style{
+		display: block;
+		width: 100%;
+		height: 40px;
+		background-color: #fff;
+		text-align: center;
+		}
+	
+		.space1{
+		display: block;
+		width: 100%;
+		height: 60px;
+		background-color: #fff;
+		}
+
+		.space2{
+		display: block;
+		width: 100%;
+		height: 30px;
+		background-color: #fff;
+		}
+	
+		.space3{
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #fff;
+		}
+
+		label[for="bt_menu"]{
+		padding: 5px;
+		background-color: #402817;
+		color: #fff;
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		display: none;
+		}
+
+		@media(max-width: 800px){
+		div{
+		display:block;
+		background-color: #402817;
+		}
+
+		.style{
+		color: #fff;
+		background-color: #402817;
+		}
+
+		.space1{
+		display: none;
+		}
+
+		.menu{
+		display: block;
+		margin-left: -100%;
+		transition: all .4s;
+		}
+
+		.menu ul li{
+		width: 100%;
+		float: none;
+		}
+
+		.menu ul ul{
+		position: static;
+		overflow:hidden;
+		}
+
+		label[for="bt_menu"]{
+		display: block;
+		}
+
+		#bt_menu:checked ~ .menu{
+		margin-left: 0;	
+		}
+
+	</style>
+</head>
+
+<body>
+	<input type="checkbox" id="bt_menu">
+	<div><label for="bt_menu">&#9776;</label></div>
+
+	<nav class = "menu">
+		<ul>	
+			<li class="fixo"><a href="index.html" > Home </a></li>
+			<li><a href="colegios.html" > Colégios </a></li>
+			<li><a href="instituto_federal.html" > IF </a>
+				<ul>
+					<li><a href="instituto_federal.html"> Historia </a></li>
+					<li><a href="curso_superior_eng_comp.html"> Engenharia </a></li>
+					<li><a href="horario_de_aulas.html"> Horário de Aula</a></li>
+				</ul>
+			</li>
+			<li><a href="sites_favoritos.html" > Sites    </a>
+				<ul>
+					<li><a href="https://www.superanimes.org/"> Super Animes </a></li>
+					<li><a href="https://mangahost2.com/"> Manga Host </a></li>
+					<li><a href="https://saikaiscan.com.br/"> Saikai Scan </a></li>
+					<li><a href="https://br.op.gg/"> OP.GG </a></li>
+				</ul>
+			</li>
+			<li><a href="atividades_culturais.html" > Hobby    </a></li>
+			<li><a href="formacao_academica.html" > Atividades </a></li>
+			<li><a href="contato.html" > Contato  </a></li>
+		</ul>
+	</nav>
+
+	<div class="space1"></div>
+	<ul>
+		<li><div class="style"><h2> Light Novels </h2></div></li>
+		<li> Light Novels são histórias escritas principalmente por asiáticos, as que eu </li>
+		<li> são majoritariamente chinesas e coreanas, cujos capitulos são lançados diáriamente </li>
+		<li> ou semanalmente, leio utilizando o site <a href="https://saikaiscan.com.br/">SaikaiScan</a>, e as principais obras atualmente</li>
+		<li> são: Tales of Gods and Demons, Rebirth of the Thief who roamed the world e The Charm of Soul Pets </li>
+		<li><div class="space3"></div></li>
+
+		<li><div class="style"><h2> Mangás </h2></div></li>
+		<li><p> Mangás são histórias em quadrinho asiáticas, e a maioria delas são baseadas</p></li>
+		<li><p> em Light Novels, tanto que outro nome para mangá é Visual Novel, eu leio </p></li>
+		<li><p> atravéz do site <a href="https://mangahost2.com/">MangaHost</a>, e as princioais obras que leio atualmente são: </p></li>
+		<li><p> Solo Leveling, Tales of Gods and Demons e Boku no Hero Academia </p></li>
+		<li><div class="space3"></div></li>
+
+		<li><div class="style"><h2> Jogos Online </h2></div></li>
+		<li><p> Para descontrair, ou de vez em quando para passar mais raiva, gosto</p></li>
+		<li><p> de diversos jogos online, meus generos favoritos são MOBA e CCG</p></li>
+		<li><p> e meus jogos favoritos desses generos são 
+		<a href="https://br.leagueoflegends.com/pt-br//">League Of Legends</a> e 
+		<a href="https://playhearthstone.com/pt-br/">Hearthstone</a> respectivamente.</p></li>
+		<li><div class="space3"></div></li>
+		
+	</ul>
+
+</body>
+</html>

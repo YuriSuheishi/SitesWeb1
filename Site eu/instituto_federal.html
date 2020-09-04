@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yuri</title>
+	<link rel="shortcut icon" type="image/png" href="img/ms-icon-70x70.png">
+	
+	<style>
+		*{
+		margin:  0;
+		padding: 0;
+		}
+		
+		.menu{
+		width: 100%;
+		height: 50px;
+		background-color:#402817;
+		font-family: 'Arial';
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		}
+
+		h2{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		h3{
+		font-family: 'Arial';
+		text-align:center;
+		}
+		
+		a{
+		font-family: 'Arial';
+		color:#000;
+		}
+
+		p{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		.menu ul{
+		padding: 0px;
+		list-style: none;
+		position: relative;
+		align: center;
+		}
+
+		.menu ul li{
+		width: 110px;
+		float: left;
+		diplay: inline-block;
+		line-weught: 50px;
+		}
+		
+		.menu ul ul{
+		display: none;
+		}
+
+		.menu ul ul li{
+		border-top: solid 1px #fff;
+		border-bottom: solid 1px #fff;
+		}
+
+		.menu ul li:hover > ul{
+		display: block;
+		}
+
+		.menu a{
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		background-color:#402817;
+		color: #fff;
+		}
+
+		#bt_menu{
+		display: none;
+		}
+
+		.menu a:hover{
+		background-color:#4b3621;
+		}
+
+		div{
+		display: none;	
+		width: 100%;
+		}
+
+		.style{
+		display: block;
+		width: 100%;
+		height: 40px;
+		background-color: #fff;
+		text-align: center;
+		}
+	
+		.space1{
+		display: block;
+		width: 100%;
+		height: 60px;
+		background-color: #fff;
+		}
+
+		.space2{
+		display: block;
+		width: 100%;
+		height: 30px;
+		background-color: #fff;
+		}
+	
+		.space3{
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #fff;
+		}
+
+		label[for="bt_menu"]{
+		padding: 5px;
+		background-color: #402817;
+		color: #fff;
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		display: none;
+		}
+
+		@media(max-width: 800px){
+		div{
+		display:block;
+		background-color: #402817;
+		}
+
+		.style{
+		color: #fff;
+		background-color: #402817;
+		}
+
+		.space1{
+		display: none;
+		}
+
+		.menu{
+		display: block;
+		margin-left: -100%;
+		transition: all .4s;
+		}
+
+		.menu ul li{
+		width: 100%;
+		float: none;
+		}
+
+		.menu ul ul{
+		position: static;
+		overflow:hidden;
+		}
+
+		label[for="bt_menu"]{
+		display: block;
+		}
+
+		#bt_menu:checked ~ .menu{
+		margin-left: 0;	
+		}
+
+	</style>
+</head>
+
+<body>
+	<input type="checkbox" id="bt_menu">
+	<div><label for="bt_menu">&#9776;</label></div>
+
+	<nav class = "menu">
+		<ul>	
+			<li class="fixo"><a href="index.html" > Home </a></li>
+			<li><a href="colegios.html" > Colégios </a></li>
+			<li><a href="instituto_federal.html" > IF </a>
+				<ul>
+					<li><a href="instituto_federal.html"> Historia </a></li>
+					<li><a href="curso_superior_eng_comp.html"> Engenharia </a></li>
+					<li><a href="horario_de_aulas.html"> Horário de Aula</a></li>
+				</ul>
+			</li>
+			<li><a href="sites_favoritos.html" > Sites    </a>
+				<ul>
+					<li><a href="https://www.superanimes.org/"> Super Animes </a></li>
+					<li><a href="https://mangahost2.com/"> Manga Host </a></li>
+					<li><a href="https://saikaiscan.com.br/"> Saikai Scan </a></li>
+					<li><a href="https://br.op.gg/"> OP.GG </a></li>
+				</ul>
+			</li>
+			<li><a href="atividades_culturais.html" > Hobby    </a></li>
+			<li><a href="formacao_academica.html" > Atividades </a></li>
+			<li><a href="contato.html" > Contato  </a></li>
+		</ul>
+	</nav>
+
+	<div class="space1"></div>
+	<ul>
+		<li><div class="style"><h2> História Do Instituto Federal </h2></div></li>
+		<li><p> <div class="space2"></div> </p></li>
+
+		<li><p> Em 2008 o Governo Federal deu um salto na educação do país com a criação dos </p></li>
+		<li><p> Institutos Federais. Através da Rede Federal de Educação Profissional e Tecnológica 31 </p></li>
+		<li><p> centros federais de educação tecnológica (Cefets), 75 unidades descentralizadas de </p></li>
+		<li><p> ensino (Uneds), 39 escolas agrotécnicas, 7 escolas técnicas federais e 8 escolas </p></li>
+		<li><p> vinculadas a universidades deixaram de existir para formar os Institutos Federais de </p></li>
+		<li><p> Educação, Ciência e Tecnologia. </p></li>
+		<li><p> <div class="space3"></div> </p></li>
+
+		<li><p> No Sul de Minas, as Escolas Agrotécnicas Federais de Inconfidentes, Machado e </p></li>
+		<li><p> Muzambinho, tradicionalmente reconhecidas pela qualidade na oferta de ensino médio e </p></li>
+		<li><p> técnico foram unificadas. Nasce assim o atual Instituto Federal de Educação, Ciência e </p></li>
+		<li><p> Tecnologia do Sul de Minas Gerais – IFSULDEMINAS. </p></li>
+		<li><p> <div class="space3"></div> </p></li>
+
+		<li><p> Hoje, o IFSULDEMINAS oferece cursos de ensino médio integrado, técnico, </p></li>
+		<li><p> cursos superiores de tecnologia, licenciatura, especialização, pós-graduação e cursos de </p></li>
+		<li><p>Educação a Distância. Além dos campi de Inconfidentes, Machado e Muzambinho o</p></li>
+		<li><p>IFSULDEMINAS tem Unidades Avançadas e Polos de Rede nas cidades da região.</p></li>
+		<li><p> <div class="space3"></div> </p></li>
+
+		<li><p>A Reitoria interliga toda a estrutura administrativa e educacional dos campi.</p></li>
+		<li><p>Sediada em Pouso Alegre, sua estratégica localização, permite fácil acesso aos campi e</p></li>
+		<li><p>unidades do IFSULDEMINAS. A missão do Instituto é promover a excelência na oferta</p></li>
+		<li><p>da educação profissional e tecnológica em todos os níveis, formando cidadãos críticos,</p></li>
+		<li><p>criativos, competentes e humanistas, articulando ensino, pesquisa e extensão e</p></li>
+		<li><p>contribuindo para o desenvolvimento sustentável do Sul de Minas Gerais.</p></li>
+		<li><p> <div class="space3"></div> </p></li>
+
+		<li><p>Em todo o Brasil os Institutos Federais apresentam um modelo pedagógico e</p></li>
+		<li><p>administrativo inovador. São 38 unidades, com mais de 300 campi em todos os estados.</p></li>
+		<li><p> <div class="space3"></div> </p></li>
+
+		<li><p>O Ministério da Educação investe R$1,1 bilhão na expansão da Rede Federal.</p></li>
+		<li><p>Em 2010 o número de escolas ultrapassará as 354 unidades previstas. Serão 500 mil</p></li>
+		<li><p>vagas em todo o país.</p></li>
+
+	</ul>
+</body>
+</html>

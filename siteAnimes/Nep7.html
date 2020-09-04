@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anymes</title>
+	<link rel="shortcut icon" type="image/png" href="img/icone.png">
+	
+	<style>
+		*{
+		margin:  0;
+		padding: 0;
+		}
+
+		.menu{
+		width: 100%;
+		height: 50px;
+		background-color:#039;
+		font-family: 'Arial';
+		font-size: 13px;
+		display: flex;
+		justify-content: center;
+		}
+
+		h1{
+		font-family: 'Arial';
+		color: #039;
+		margin-left: 15%;
+		}
+
+		h2{
+		font-family: 'Arial';
+		color: #039;
+		margin-left: 15%;
+		}
+
+		h3{
+		font-family: 'Arial';
+		text-align:center;
+		}
+
+		
+		p{
+		font-family: 'Arial';
+		margin-left: 15%;
+		}
+
+		.menu ul{
+		padding: 0px;
+		list-style: none;
+		position: relative;
+		align: center;
+		}
+
+		.menu ul li{
+		width: 135px;
+		float: left;
+		diplay: inline-block;
+		line-weught: 50px;
+		}
+		
+		.menu ul ul{
+		display: none;
+		}
+
+		.menu ul ul li{
+		border-top: solid 1px #fff;
+		border-bottom: solid 1px #fff;
+		}
+
+		.menu ul li:hover > ul{
+		display: block;
+		}
+
+		.menu a{
+		margin-left: 0px;
+		padding: 15px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		background-color:#039;
+		color: #fff;
+		}
+
+		#bt_menu{
+		display: none;
+		}
+
+		.menu a:hover{
+		background-color:#06f;
+		}
+
+		div{
+		display: none;	
+		width: 100%;
+		}
+	
+		.style{
+		display: block;
+		width: 100%;
+		height: 40px;
+		background-color: #fff;
+		text-align: center;
+		}
+	
+		.space1{
+		display: block;
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+		}
+
+		.space2{
+		display: block;
+		width: 100%;
+		height: 30px;
+		background-color: #fff;
+		}
+	
+		.space3{
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #fff;
+		}
+
+		label[for="bt_menu"]{
+		padding: 5px;
+		background-color: #039;
+		color: #fff;
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		display: none;
+		}
+
+		@media(max-width: 1100px){
+		div{
+		display:block;
+		background-color: #039;
+		}
+
+		.style{
+		color: #fff;
+		background-color: #039;
+		}
+
+		.space1{
+		display: none;
+		}
+
+		.menu{
+		display: block;
+		margin-left: -100%;
+		transition: all .4s;
+		}
+
+		.menu ul li{
+		width: 100%;
+		float: none;
+		}
+
+		.menu ul ul{
+		position: static;
+		overflow:hidden;
+		}
+
+		img{
+		width: 90%;
+		}
+
+		label[for="bt_menu"]{
+		display: block;
+		}
+
+		#bt_menu:checked ~ .menu{
+		margin-left: 0;	
+		}
+	</style>
+</head>
+
+<body>
+	<input type="checkbox" id="bt_menu">
+	<div><label for="bt_menu">&#9776;</label></div>
+
+	<nav class = "menu">
+		<ul>	
+			<li class="fixo"><a href="index.html" > Home </a></li>
+			<li><a href="BokuNoPico.html" > Erased </a>
+				<ul>
+					<li><a href="Eep1.html"> Episódio 1 </a></li>
+					<li><a href="Eep2.html"> Episódio 2 </a></li>
+					<li><a href="Eep3.html"> Episódio 3 </a></li>
+					<li><a href="Eep4.html"> Episódio 4 </a></li>
+					<li><a href="Eep5.html"> Episódio 5 </a></li>
+					<li><a href="Eep6.html"> Episódio 6 </a></li>
+					<li><a href="Eep7.html"> Episódio 7 </a></li>
+					<li><a href="Eep8.html"> Episódio 8 </a></li>
+					<li><a href="Eep9.html"> Episódio 9 </a></li>
+					<li><a href="Eep10.html"> Episódio 10 </a></li>
+					<li><a href="Eep11.html"> Episódio 11 </a></li>
+					<li><a href="Eep12.html"> Episódio 12 </a></li>
+				</ul></li>
+			<li><a href="Mob.html" > Mob Psycho </a>
+				<ul>
+					<li><a href="MPep1.html"> Episódio 1 </a></li>
+					<li><a href="MPep2.html"> Episódio 2 </a></li>
+					<li><a href="MPep3.html"> Episódio 3 </a></li>
+					<li><a href="MPep4.html"> Episódio 4 </a></li>
+					<li><a href="MPep5.html"> Episódio 5 </a></li>
+					<li><a href="MPep6.html"> Episódio 6 </a></li>
+					<li><a href="MPep7.html"> Episódio 7 </a></li>
+					<li><a href="MPep8.html"> Episódio 8 </a></li>
+					<li><a href="MPep9.html"> Episódio 9 </a></li>
+					<li><a href="MPep10.html"> Episódio 10 </a></li>
+					<li><a href="MPep11.html"> Episódio 11 </a></li>
+					<li><a href="MPep12.html"> Episódio 12 </a></li>
+				</ul></li>
+			<li><a href="Nora.html" > Noragami </a>
+				<ul>
+					<li><a href="Nep1.html"> Episódio 1 </a></li>
+					<li><a href="Nep2.html"> Episódio 2 </a></li>
+					<li><a href="Nep3.html"> Episódio 3 </a></li>
+					<li><a href="Nep4.html"> Episódio 4 </a></li>
+					<li><a href="Nep5.html"> Episódio 5 </a></li>
+					<li><a href="Nep6.html"> Episódio 6 </a></li>
+					<li><a href="Nep7.html"> Episódio 7 </a></li>
+					<li><a href="Nep8.html"> Episódio 8 </a></li>
+					<li><a href="Nep9.html"> Episódio 9 </a></li>
+					<li><a href="Nep10.html"> Episódio 10 </a></li>
+					<li><a href="Nep11.html"> Episódio 11 </a></li>
+					<li><a href="Nep12.html"> Episódio 12 </a></li>
+				</ul></li>
+			<li><a href="No.html" > No Game No Life </a>
+				<ul>
+					<li><a href="NGep1.html"> Episódio 1 </a></li>
+					<li><a href="NGep2.html"> Episódio 2 </a></li>
+					<li><a href="NGep3.html"> Episódio 3 </a></li>
+					<li><a href="NGep4.html"> Episódio 4 </a></li>
+					<li><a href="NGep5.html"> Episódio 5 </a></li>
+					<li><a href="NGep6.html"> Episódio 6 </a></li>
+					<li><a href="NGep7.html"> Episódio 7 </a></li>
+					<li><a href="NGep8.html"> Episódio 8 </a></li>
+					<li><a href="NGep9.html"> Episódio 9 </a></li>
+					<li><a href="NGep10.html"> Episódio 10 </a></li>
+					<li><a href="NGep11.html"> Episódio 11 </a></li>
+					<li><a href="NGep12.html"> Episódio 12 </a></li>
+				</ul></li>
+			<li><a href="One.html" > One Punch Man </a>
+				<ul>
+					<li><a href="OPMep1.html"> Episódio 1 </a></li>
+					<li><a href="OPMep2.html"> Episódio 2 </a></li>
+					<li><a href="OPMep3.html"> Episódio 3 </a></li>
+					<li><a href="OPMep4.html"> Episódio 4 </a></li>
+					<li><a href="OPMep5.html"> Episódio 5 </a></li>
+					<li><a href="OPMep6.html"> Episódio 6 </a></li>
+					<li><a href="OPMep7.html"> Episódio 7 </a></li>
+					<li><a href="OPMep8.html"> Episódio 8 </a></li>
+					<li><a href="OPMep9.html"> Episódio 9 </a></li>
+					<li><a href="OPMep10.html"> Episódio 10 </a></li>
+					<li><a href="OPMep11.html"> Episódio 11 </a></li>
+					<li><a href="OPMep12.html"> Episódio 12 </a></li>
+				</ul></li>
+			<li><a href="Bunny.html" > Bunny Girl </a>
+				<ul>
+					<li><a href="Bep1.html"> Episódio 1 </a></li>
+					<li><a href="Bep2.html"> Episódio 2 </a></li>
+					<li><a href="Bep3.html"> Episódio 3 </a></li>
+					<li><a href="Bep4.html"> Episódio 4 </a></li>
+					<li><a href="Bep5.html"> Episódio 5 </a></li>
+					<li><a href="Bep6.html"> Episódio 6 </a></li>
+					<li><a href="Bep7.html"> Episódio 7 </a></li>
+					<li><a href="Bep8.html"> Episódio 8 </a></li>
+					<li><a href="Bep9.html"> Episódio 9 </a></li>
+					<li><a href="Bep10.html"> Episódio 10 </a></li>
+					<li><a href="Bep11.html"> Episódio 11 </a></li>
+					<li><a href="Bep12.html"> Episódio 12 </a></li>
+					<li><a href="Bep13.html"> Episódio 13 </a></li>
+				</ul></li>
+			<li><a href="Neverland.html" > Neverland  </a>
+				<ul>
+					<li><a href="YNep1.html"> Episódio 1 </a></li>
+					<li><a href="YNep2.html"> Episódio 2 </a></li>
+					<li><a href="YNep3.html"> Episódio 3 </a></li>
+					<li><a href="YNep4.html"> Episódio 4 </a></li>
+					<li><a href="YNep5.html"> Episódio 5 </a></li>
+					<li><a href="YNep6.html"> Episódio 6 </a></li>
+					<li><a href="YNep7.html"> Episódio 7 </a></li>
+					<li><a href="YNep8.html"> Episódio 8 </a></li>
+					<li><a href="YNep9.html"> Episódio 9 </a></li>
+					<li><a href="YNep10.html"> Episódio 10 </a></li>
+					<li><a href="YNep11.html"> Episódio 11 </a></li>
+					<li><a href="YNep12.html"> Episódio 12 </a></li>
+				</ul></li>
+		</ul>
+	</nav>
+	
+	
+		
+	
+	
+	<div class="space2"></div>
+	<h1> Noragami </h1>
+	<h2> Episódio 7 </h2>
+	<p>
+	<iframe width="1000" height="600" src="https://www.superanimes.org/anime/noragami/18445 scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="false">
+	</iframe>
+	</p>
+	<p>
+	<a href="Nep6.html"><img src="img/e.jpg" width="20px" title="Episódio 6" >	
+	</a>
+	<a href="Nep8.html"><img src="img/d.jpg" width="20px" title="Episódio 8" >	
+	</a>
+	</p>
+
+	<div class="space3"></div>
+</body>
+</html>

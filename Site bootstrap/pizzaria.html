@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizarria</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+        <style>
+            .container-fluid{
+                text-align: center;
+            }
+    
+            .space{
+            display: block;
+            width: 100%;
+            height: 30px;
+            }
+    
+            .ajuste{
+            display: block;
+            width: 100%;
+            height: 10px;
+            }
+
+            @media (max-width: 767.98px) { 
+                .toSMALL{
+                    display: block;
+                }
+
+                .toBIG{
+                    display: none;
+                }
+            }
+           
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                .pedido{
+                    position: absolute;
+                    top: 50px;
+                    right: 17%;
+                }
+                
+                .toSMALL{
+                    display: none;
+                }
+
+                .toBIG{
+                    display: block;
+                }
+            }
+
+
+            @media (min-width: 992px) and (max-width: 1199.98px) { 
+                .pedido{
+                    position: absolute;
+                    top: 50px;
+                    right: 14%;
+                }
+                
+                .toSMALL{
+                    display: none;
+                }
+
+                .toBIG{
+                    display: block;
+                }
+            }
+
+
+            @media (min-width: 1200px) and (max-width: 1499.98px) { 
+                .pedido{
+                    position: absolute;
+                    top: 50px;
+                    right: 15%;
+                }
+                
+                .toSMALL{
+                    display: none;
+                }
+
+                .toBIG{
+                    display: block;
+                }
+            }
+
+            @media (min-width: 1500px) { 
+                .pedido{
+                    position: absolute;
+                    top: 50px;
+                    right: 15%;
+                }
+                
+                .toSMALL{
+                    display: none;
+                }
+
+                .toBIG{
+                    display: block;
+                }
+            }
+    
+        </style>
+    
+    </head>
+    <body>
+        <div class="container bg-light rounded">
+            <div class="space"></div> 
+            <div class="container-fluid bg-light align-content-center align-items-center img-fluid rounded">
+                <div class="space"></div> 
+                <p><img width="250px" src="img/logo.png"></p>
+                <span class="border-top text-dark ">
+                    Utilize as opções abaixo para selecionar seus produtos e realizar seu pedido
+                </span>
+                <div class="space"></div> 
+                <p><button type="submit" class="pedido btn btn-primary mb-2" disabled>Acompanhe seu pedido</button></p>
+            </div>
+        </div>
+            <div class="space"></div> 
+
+            <div class="container border rounded">
+
+                    <div class="row bg-light w-auto">
+                        <div class="ajuste"></div> 
+                        <div class="col-auto">
+                            <button type="submit"  class="btn btn-primary mb-2" disabled>1</button>
+                        </div>
+                        <div class="col">
+                            <h5>Escolha os produtos</h5>
+                        </div>
+                    </div>    
+                    <div class="space"></div> 
+
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            *Selecione um produto
+                        </div>
+                        <div class="col-lg-4 col-md-4 toBIG">
+                            *Quantidade
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>---</option>
+                            <option value="1">Calabresa</option>
+                            <option value="2">Frango Catupiry</option>
+                            <option value="3">Marguerita</option>
+                            <option value="4">Portuguesa</option>
+                            <option value="5">Quatro Queijos</option>
+                            </select>
+                        </div>
+                        <div class="ajuste toSMALL"></div> 
+                        <div class="col toSMALL">
+                            *Quantidade
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <input type="number" class="form-control" id="filhos" placeholder="" >
+                        </div>
+                        <div class="ajuste toSMALL"></div> 
+                        <div class="col-lg col-md">
+                            <button type="submit"  class="btn btn-primary mb-2">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="space toBIG"></div> 
+            </div>    
+            
+            <div class="space"></div> 
+
+            
+            <div class="container border rounded ">
+
+                <div class="row bg-light w-auto">
+                    <div class="ajuste"></div> 
+                    <div class="col-auto">
+                        <button type="submit"  class="btn btn-primary mb-2" disabled>2</button>
+                    </div>
+                    <div class="col">
+                        <h5>Produtos do seu pedido</h5>
+                    </div>
+                    
+                </div>    
+                <div class="space"></div> 
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr class="table-dark text-dark font-weight-bold w-100" >
+                            <td class="w-auto">#</td>
+                            <td class="w-25">Produto</td>
+                            <td class="w-25">Qtd</td>
+                            <td class="w-25"> Preço Unit</td>
+                            <td class="w-25">Subtotal</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><img width="150px" src="img/pizza-calabresa.jpg"></td>
+                            <td><p>Pizza Calabresa</p>
+                                <button type="submit"  class="btn btn-danger mb-2">Remover</button></td>
+                            <td>Valor 31</td>
+                            <td>Valor 41</td>
+                            <td>Valor 51</td>
+                          </tr>
+                          <tr>
+                            <td><img width="150px" src="img/pizza-4-queijos.jpg"></td>
+                            <td><p>Pizza 4 Queijos </p>
+                                <button type="submit"  class="btn btn-danger mb-2">Remover</button></td>
+                            <td>Valor 32</td>
+                            <td>Valor 42</td>
+                            <td>Valor 52</td>
+                          </tr>
+                          <tr>
+                            <td><img width="150px" src="img/pizza-marguerita.jpg"></td>
+                            <td><p>Pizza Marguerita </p>
+                                <button type="submit"  class="btn btn-danger mb-2">Remover</button></td>
+                            <td>Valor 33</td>
+                            <td>Valor 43</td>
+                            <td>Valor 53</td>
+                          </tr>
+                          <tr class="bg-dark">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="text-light font-weight-bold">Total do Pedido:</td>
+                            <td class="bg-light font-weight-bold">R$: 0,00</td>
+                          </tr>
+                        </tbody>    
+                      </table>
+                </div>
+
+
+                    <div class="ajuste"></div>
+                </div>
+                <div class="space toBIG"></div> 
+            </div>
+
+
+            <div class="space"></div> 
+
+            <div class="container border rounded">
+
+                <div class="row bg-light w-auto">
+                    <div class="ajuste"></div> 
+                    <div class="col-auto">
+                        <button type="submit"  class="btn btn-primary mb-2" disabled>3</button>
+                    </div>
+                    <div class="col">
+                        <h5>Informações Adicionais</h5>
+                    </div>
+                </div>    
+                <div class="space"></div> 
+
+                <div class="row">
+                    <div class="col">
+                        *Nome Completo:
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                    </div>
+                </div>
+                <div class="ajuste"></div> 
+                <div class="row">
+                    <div class="col-lg col-md">
+                        *E-mail:
+                    </div>    
+                    <div class="col-lg col-md toBIG">
+                        *Telefone:
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *Telefone:
+                    </div>
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="tel" placeholder="Digite seu telefone">
+                    </div>
+                </div>
+                <div class="ajuste"></div> 
+
+                
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        *CEP:
+                    </div>    
+                    <div class="col-lg col-md toBIG">
+                        *Endereço:
+                    </div>    
+                    <div class="col-lg-1 col-md-1 toBIG">
+                        *N:
+                    </div>    
+                    <div class="col-lg col-md toBIG">
+                        *Complemento:
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <input type="text" class="form-control" id="cep" placeholder="00000-000">
+                    </div>    
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *Endereço:
+                    </div>
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="end" placeholder="...">
+                    </div>    
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *N:
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        <input type="text" class="form-control" id="num" placeholder="000">
+                    </div>    
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *Complemento:
+                    </div>
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="comp" placeholder="...">
+                    </div>    
+                </div>
+                <div class="ajuste"></div> 
+
+                <div class="row">
+                    <div class="col-lg col-md">
+                        *Bairro:
+                    </div>    
+                    <div class="col-lg col-md toBIG">
+                        *Cidade:
+                    </div>    
+                    <div class="col-lg col-md toBIG">
+                        *Estado:
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="bairro" placeholder="...">
+                    </div>
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *Cidade:
+                    </div>
+                    <div class="col-lg col-md">
+                        <input type="text" class="form-control" id="cit" placeholder="...">
+                    </div>
+                    <div class="ajuste toSMALL"></div>
+                    <div class="col toSMALL">
+                        *Estado:
+                    </div>
+                    <div class="col-lg col-md">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>---</option>
+                        <option value="1">Amazonas</option>
+                        <option value="2">Bahia</option>
+                        <option value="3">Distrito Federal</option>
+                        <option value="4">Minas Gerais</option>
+                        <option value="5">Paraná</option>
+                        <option value="6">Rio de Janeiro</option>
+                        <option value="7">São Paulo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ajuste"></div> 
+                
+                <div class="row">
+                    <div class="col">
+                        Observações
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Ex: Pizza sem cebolas, pouca azeitona..."></textarea>       
+                    </div>
+                </div>
+                <div class="ajuste"></div> 
+
+                <div class="row">
+                    <div class="col">
+                        <button type="submit"  class="btn btn-success mb-2 col-lg-auto col-md-auto col-sm">Enviar Pedido</button>
+                    </div>
+                </div>
+                <div class="ajuste toBIG"></div> 
+            </div>  
+            
+            <div class="space"></div> 
+
+
+            <div class="container border rounded ">
+
+                <div class="row bg-light w-auto">
+                    <div class="ajuste"></div> 
+                    <div class="col-auto">
+                        <button type="submit"  class="btn btn-primary mb-2" disabled>4</button>
+                    </div>
+                    <div class="col">
+                        <h5>Finalização</h5>
+                    </div>
+                    
+                </div>    
+                <div class="space"></div> 
+                <div class="alert-success text-center text-success">
+                    
+                    <p>código do pedido:</p>
+                    <p><h1>Q5PaXtkK</h1></p>
+                    
+                <span class="border-top border-success text-success ">
+                    
+                    Seu pedido foi enviado com sucesso
+                </span>
+
+
+                    <div class="ajuste"></div>
+                </div>
+                <div class="space toBIG"></div> 
+            </div>
+            <div class="space"></div> 
+
+    </body>
+</html>    

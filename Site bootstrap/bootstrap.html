@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+        <style>
+        .container-fluid{
+        background-color:#27f;
+        color: #fff;
+        font-size: 24px;
+        }
+
+		.space{
+		display: block;
+		width: 100%;
+		height: 30px;
+		background-color: #fff;
+		}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="space"></div> 
+            <div class="container-fluid bc">
+            <p>Cadastro do Cliente</p>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Nome:
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="nome" placeholder="Nome">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  CPF:
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+                </div>
+                <div class="col-1">
+                  Nascimento:
+                </div>
+                <div class="col-auto">
+                    <input type="date" class="form-control" id="nasc">
+                </div>
+                <div class="col-1">
+                    Sexo: 
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="sex" id="fem" value="option1" checked>
+                    <label class="form-check-label" for="fem">
+                      Feminino
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="sex" id="masc" value="option2">
+                    <label class="form-check-label" for="masc">
+                      Masculino
+                    </label>
+                </div>
+            </div>   
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Telefone:
+                </div>
+                <div class="col-3">
+                    <input type="tel" class="form-control" id="tel" placeholder="00 00000-0000">
+                </div>
+                <div class="col-1">
+                  Telefone*:
+                </div>
+                <div class="col-3">
+                    <input type="tel" class="form-control" id="tel2" placeholder="00 00000-0000">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Email:
+                </div>
+                <div class="col-8">
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  CEP:
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="cpf" placeholder="00000-000">
+                </div>
+                <div class="col-3">
+                    <button type="submit" class="btn btn-primary mb-2">Pesquisar</button>
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                    Endereço:
+                </div>
+                <div class="col-4">
+                    <label class="sr-only" for="rua">Rua</label>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text">Rua</div>
+                    </div>
+                    <input type="text" class="form-control" id="rua">
+                  </div>
+                </div>
+                <div class="col-4">
+                    <label class="sr-only" for="bairro">Bairro</label>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text">Bairro</div>
+                    </div>
+                    <input type="text" class="form-control" id="bairro">
+                    </div>
+                </div>
+                <div class="col">
+                    <label class="sr-only" for="n">N</label>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text">Nº</div>
+                    </div>
+                    <input type="number" class="form-control" id="n">
+                    </div>
+                </div>
+            </div>  
+            <div class="space"></div>   
+
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-5">
+                    <label class="sr-only" for="cidade">cidade</label>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text">Cidade</div>
+                    </div>
+                    <input type="text" class="form-control" id="cidade">
+                  </div>
+                </div>
+                <div class="col-4">
+                    <label class="sr-only" for="estado">estado</label>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                    <div class="input-group-text">Estado</div>
+                    </div>
+                    <input type="text" class="form-control" id="estado">
+                    </div>
+                </div>
+            </div>  
+            <div class="space"></div>   
+
+            <div class="row">
+                <div class="col-2">
+                  Estado Civil:
+                </div>
+                <div class="col-3">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Selecione...</option>
+                    <option value="1">Casado(a)</option>
+                    <option value="2">Divorciado(a)</option>
+                    <option value="3">Separado(a)</option>
+                    <option value="4">Solteiro(a)</option>
+                    <option value="5">Viúvo(a)</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    Filhos:
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="f" id="n" value="n" checked>
+                    <label class="form-check-label" for="n">
+                      Não
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="f" id="s" value="s">
+                    <label class="form-check-label" for="s">
+                      Sim
+                    </label>
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" id="filhos" placeholder="Se sim, quantos" >
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Escolaridade:
+                </div>
+                <div class="col-3">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Selecione...</option>
+                    <option value="1"> Fundamental Incompleto</option>
+                    <option value="2"> Fundamental Completo</option>
+                    <option value="3"> Médio Incompleto</option>
+                    <option value="4"> Médio Completo</option>
+                    <option value="5"> Superior Incompleto</option>
+                    <option value="6"> Superior Completo</option>
+                    <option value="6"> Pós Graduação</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    Profissão:
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="VergonhaDaProfission">
+                </div>
+            </div>   
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                    Encaminhamento:
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="en" id="n" value="n" checked>
+                    <label class="form-check-label" for="n">
+                      Não
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="en" id="s" value="s">
+                    <label class="form-check-label" for="s">
+                      Sim
+                    </label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="Encaminhamento" placeholder="Instituição">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                    Aluno do IFSULDEMINAS:
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="al" id="n" value="n" checked>
+                    <label class="form-check-label" for="n">
+                      Não
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="al" id="s" value="s">
+                    <label class="form-check-label" for="s">
+                      Sim
+                    </label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="CursoIF" placeholder="Curso">
+                </div>
+            </div>
+            <div class="space"></div> 
+            
+            <div class="row">
+                <div class="col-2">
+                  Como descobriu o IFSULDEMINAS:
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="como">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+
+            
+            <div class="h2">
+                <p>Responsável</p>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Nome:
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="nome2" placeholder="Nome">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Vinculo com cliente:
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control" id="cpf" placeholder="">
+                </div>
+                <div class="col-1">
+                  Nascimento:
+                </div>
+                <div class="col-auto">
+                    <input type="date" class="form-control" id="nasc">
+                </div>
+                <div class="col-1">
+                    Sexo: 
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="sex" id="fem" value="option1" checked>
+                    <label class="form-check-label" for="fem">
+                      Feminino
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="sex" id="masc" value="option2">
+                    <label class="form-check-label" for="masc">
+                      Masculino
+                    </label>
+                </div>
+            </div>   
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Estado Civil:
+                </div>
+                <div class="col-3">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Selecione...</option>
+                    <option value="1">Casado(a)</option>
+                    <option value="2">Divorciado(a)</option>
+                    <option value="3">Separado(a)</option>
+                    <option value="4">Solteiro(a)</option>
+                    <option value="5">Viúvo(a)</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    Filhos:
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="f" id="n" value="n" checked>
+                    <label class="form-check-label" for="n">
+                      Não
+                    </label>
+                </div>
+                <div class="col-1">
+                    <input class="form-check-input" type="radio" name="f" id="s" value="s">
+                    <label class="form-check-label" for="s">
+                      Sim
+                    </label>
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" id="filhos" placeholder="Se sim, quantos" >
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Escolaridade:
+                </div>
+                <div class="col-3">
+                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Selecione...</option>
+                    <option value="1"> Fundamental Incompleto</option>
+                    <option value="2"> Fundamental Completo</option>
+                    <option value="3"> Médio Incompleto</option>
+                    <option value="4"> Médio Completo</option>
+                    <option value="5"> Superior Incompleto</option>
+                    <option value="6"> Superior Completo</option>
+                    <option value="6"> Pós Graduação</option>
+                    </select>
+                </div>
+                <div class="col-1">
+                    Profissão:
+                </div>
+                <div class="col-3">
+                    <input type="text" class="form-control" id="VergonhaDaProfission">
+                </div>
+            </div>   
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Telefone:
+                </div>
+                <div class="col-3">
+                    <input type="tel" class="form-control" id="tel" placeholder="00 00000-0000">
+                </div>
+                <div class="col-1">
+                  Telefone*:
+                </div>
+                <div class="col-3">
+                    <input type="tel" class="form-control" id="tel2" placeholder="00 00000-0000">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+                  Email:
+                </div>
+                <div class="col-8">
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-success mb-2">Cadastrar</button>
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-danger mb-2">Cancelar</button>
+                </div>
+                <div class="col">
+                    Obs: todos os campos são obrigatórios, com exceção daqueles marcados com *
+                </div>
+            </div>
+            <div class="space"></div> 
+
+            <div class="space"></div>     
+        </div>
+    </body>
+</html>

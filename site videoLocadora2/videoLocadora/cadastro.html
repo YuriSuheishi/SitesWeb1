@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="cadastro">
+        <form action="">
+            <label for="nome" class="labelLogin">Nome:</label>
+            <input type="text" id="nome">
+
+            <label for="endereco" class="labelLogin">Endereço:</label>
+            <input type="text" id="endereco">
+
+            <label for="email" class="labelLogin">Email:</label>
+            <input type="email" id="email">
+
+            <label for="cidade" class="labelLogin">Cidade:</label>
+            <input type="text" id="cidade">
+
+            <fieldset>
+                <legend>Estado:</legend>
+                <select name="" id="">
+                    <option value="">Espirito Santo</option>
+                    <option value="">Minas Gerais</option>
+                    <option value="">Paraná</option>
+                    <option value="">Rio de Janeiro</option>
+                    <option value="">Rio Grande do Sul</option>
+                    <option value="">Santa Catarina</option>
+                    <option value="">São Paulo</option>
+                </select>
+            </fieldset>
+            <div class="seletores">
+                <fieldset class="radio">
+                    <legend>Sexo:</legend>
+
+                    <label for="radio-feminino"> <input type="radio" name="sexo" value="feminino" id="radio-feminino">Feminino</label>
+                
+                    <label for="radio-masculino"> <input type="radio" name="sexo" value="masculino" id="radio-masculino" checked>Masculino</label>
+                </fieldset>
+                <fieldset class="box">
+                    <legend>Escolha os filmes que você mais gosta</legend>
+                    <label for=""><input type="checkbox">Ação</label>
+                    <label for=""><input type="checkbox">Aventura</label>
+                    <label for=""><input type="checkbox">Comédia</label>
+                    <label for=""><input type="checkbox">Suspense</label>
+                    <label for=""><input type="checkbox">Drama</label>
+                    <label for=""><input type="checkbox">Romance</label>
+                    <label for=""><input type="checkbox">Terror</label>
+                </fieldset>
+             </div>
+
+            <label for="usuarioCadastro">Usuário <input type="text" id="usuarioCadastro"></label>
+            <label for="senhaCadastro">Senha <input type="password" id="senhaCadastro"></label>
+
+            <div class="botoes">
+                <input type="submit" value="Cancelar">
+                <input type="submit" value="Limpar">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        <p><a href="index.html">Voltar</a></p>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,46 @@
+.telaLogin form{
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.telaLogin ul{
+    text-align: center;
+}
+
+.telaLogin ul li{
+    margin: 20px;
+    display: inline;
+}
+
+.login{
+    display: block;
+    margin: 20px;
+}
+
+.cadastro form{
+    display: block;
+}
+
+.cadastro input,label{
+    display: block;
+}
+
+.cadastro fieldset{
+    border: 0ch;
+    margin-left: 1px;
+    padding-left: 0px;
+}
+
+.seletores legend,input{
+    display: inline;
+}
+
+.seletores label{
+    display: flex;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 30px;
+}
