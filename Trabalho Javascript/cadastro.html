@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+      
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+   
+    <title>Concessionaria Pistao</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/icone.png">
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .foot{
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            height: 20px;
+            background-color: white;
+
+
+      }
+        
+    
+        .ajuste{
+            display: block;
+            width: 100%;
+            height: 10px;
+            }
+
+        .img{
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            background-color: white;
+        }
+
+        .imgPes{
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto; 
+            background-color: white;
+        }
+
+        .barr{
+            margin-top: 200px;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+  <header>
+  <div class="img"> <img width="800px" src="img/logo.jpg"> </div>
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark barr">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="listagem.html">Listagem</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+      </ul>
+  </nav>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <br>
+
+    
+  <div class="container border rounded">
+    <div><br></div>
+   
+
+    <div class="row">
+        <div class="col-lg col-md">
+            Marca:
+        </div>    
+        <div class="col-lg col-md ">
+            Modelo:
+        </div>    
+    </div>
+    <div class="row">
+        
+      <div class="col-lg col-md">
+        <label class="mr-sm-2 sr-only" for="marca">Preference</label>
+        <select class="custom-select mr-sm-2" data-js="marca" id="marca">
+        <option value=" " selected>--Selecione--</option>
+        <option value="Alfa Romeu">Alfa Romeu</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Citroen">Citroen</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Fiat">Fiat</option>
+        <option value="Ford">Ford</option>
+        <option value="Honda">Honda</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Mercedes Benz">Mercedes Benz</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Peugeot">Peugeot</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Volvo">Volvo</option>
+        </select>
+    </div>
+        <div class="col-lg col-md">
+            <input type="text" class="form-control" data-js="model" id="model" placeholder="Insira o nome do modelo">
+        </div>
+    </div>
+    <div class="ajuste"></div> 
+
+    
+    <div class="row">  
+        <div class="col-lg col-md ">
+            Ano:
+        </div>    
+        <div class="col-lg col-md ">
+            Preço:
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col-lg col-md">
+            <input type="number" class="form-control" data-js="ano" id="ano" placeholder="Insira o ano">
+        </div>    
+        <div class="col-lg col-md">
+            <input type="number" class="form-control" data-js="preco" id="preco" placeholder="Insira o preço">
+        </div>    
+    </div>
+    <div class="ajuste"></div> 
+
+    <div class="row">
+      <div class="col-lg col-md">
+          Foto:
+      </div>    
+      <div class="col-lg col-md ">
+          Cor:
+      </div>    
+  </div>
+  <div class="row">
+    <div class="col-lg col-md">
+      <input type="text" class="form-control" data-js="foto" id="foto" placeholder="Insira o nome da foto">
+    </div>
+    <div class="col-lg col-md">
+      <label class="mr-sm-2 sr-only" for="cor">Preference</label>
+      <select class="custom-select mr-sm-2" data-js="cor" id="cor">
+      <option value=" " selected>--Selecione--</option>
+      <option value="Azul">Azul</option>
+      <option value="Branco">Branco</option>
+      <option value="Cinza">Cinza</option>
+      <option value="Preto">Preto</option>
+      <option value="Prata">Prata</option>
+      <option value="Vermelho">Vermelho</option>
+      </select>
+  </div>
+  </div>
+  <div class="ajuste"></div> 
+    
+    <div class="row">
+        <div class="col">
+            Descrição
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <textarea class="form-control" id="descricao" aria-label="With textarea" placeholder="Insira a Descrição do veiculo"></textarea>       
+        </div>
+    </div>
+    <div class="ajuste"></div> 
+  
+  <div class="row">
+    <div class="col">
+        <button onclick="salvar()" class="btn btn-primary mb-2 col-lg-auto col-md-auto col-sm">Cadastrar Veiculo</button>
+        <button type="submit" id="clr" onclick="limpar()" class="btn btn-secondary mb-2 col-lg-auto col-md-auto col-sm">Limpar</button>
+    </div>
+</div>
+</div>  
+
+<br><br>
+<script>
+    const marca = document.getElementById('marca');
+    const model = document.getElementById('model');
+    const ano = document.getElementById('ano');
+    const preco = document.getElementById('preco');
+    const foto = document.getElementById('foto');
+    const cor = document.getElementById('cor');
+    const desc = document.getElementById('descricao');
+
+    function salvar(){
+      if(validar()){
+
+      if(localStorage.getItem('chave')){
+        var chave;
+        chave = parseInt(localStorage.getItem('chave'));
+        localStorage.setItem(chave,marca.value);
+        localStorage.setItem(chave + 'model',model.value);
+        localStorage.setItem(chave + 'ano',ano.value);
+        localStorage.setItem(chave + 'preco',preco.value);
+        localStorage.setItem(chave + 'foto',foto.value);
+        localStorage.setItem(chave + 'cor',cor.value);
+        localStorage.setItem(chave + 'desc',desc.value);
+        chave = chave + 1;
+        localStorage.setItem('chave',chave);
+        alert("Item adicionado.");
+        
+        
+      }else{
+        localStorage.setItem(0,marca.value);
+        localStorage.setItem(0 + 'model',model.value);
+        localStorage.setItem(0 + 'ano',ano.value);
+        localStorage.setItem(0 + 'preco',preco.value);
+        localStorage.setItem(0 + 'foto',foto.value);
+        localStorage.setItem(0 + 'cor',cor.value);
+        localStorage.setItem(0 + 'desc',desc.value);
+        localStorage.setItem('chave',1);
+        alert("Item adicionado.");
+        
+    }}}
+
+    function limpar(){
+    document.getElementById('marca').value = '--Selecione--';
+    document.getElementById('model').value = '';
+    document.getElementById('ano').value = '';
+    document.getElementById('preco').value = '';
+    document.getElementById('foto').value = '';
+    document.getElementById('cor').value = '--Selecione--';
+    document.getElementById('descricao').value = '';
+    } 
+    
+    
+</script>
+<script src="app1.js"></script>
+<footer class=" foot mb-0"> Instituto Federal do Sul de Minas - IFSULDEMINAS / Campus Poços de Caldas, MG. </footer>
+</main>
+
+</html>

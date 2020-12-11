@@ -1,0 +1,1 @@
+Site proposto para trabalho interdisciplinar com IA, com intuito de criar um sistema de pesquisa parecido com o google
