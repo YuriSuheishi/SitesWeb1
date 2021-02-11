@@ -28,9 +28,9 @@ Site de uma concessionária, utilizando HTML, CSS e JavaScript, utilizando o rec
 
 <h2>Site Bootstrap</h2>
 O objetivo dos trabalhos de bootstrap era apenas fazer com que as páginas criadas fossem identicas as imagens postadas pelo professor, portanto elas não possui funcionalidade alguma.
-<br> site 1(bootstrap.html)
+<br><b> site 1 (bootstrap.html) </b>
 <img src="img/boot1.png">
-<br> site 1(pizzaria.html)
+<br><b> site 2 (pizzaria.html) </b>
 <img src="img/boot2.png">
 <img src="img/boot3.png">
 <img src="img/boot4.png">
