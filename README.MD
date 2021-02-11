@@ -23,12 +23,14 @@ possui muitas páginas, mas com pouco conteúdo, e vários iframes um certo site
 A imagem da página inicial foi criada por mim utilizando o Photoshop.
 
 <h2>Site JavaScript</h2>
-Site de uma concessionária, utilizando HTML, CSS e JavaScript, utilizando o recurso de Local Storage. O site possui um formulário para cadastrar os carros e uma página de listagem, onde é possivel editar ou excluir carros já cadastrados
+Site de uma concessionária, utilizando HTML, CSS e JavaScript, utilizando o recurso de Local Storage. O site possui um formulário para cadastrar os carros e uma página de listagem, onde é possivel editar ou excluir carros já cadastrados.
 <img src="img/pistao.png">
 
 <h2>Site Bootstrap</h2>
-O objetivo dos trabalhos de bootstrap era apenas fazer com que as páginas criadas fossem identicas as imagens postadas pelo professor, portanto elas não possui funcionalidade alguma
+O objetivo dos trabalhos de bootstrap era apenas fazer com que as páginas criadas fossem identicas as imagens postadas pelo professor, portanto elas não possui funcionalidade alguma.
+> site 1(bootstrap.html)
 <img src="img/boot1.png">
+> site 1(pizzaria.html)
 <img src="img/boot2.png">
 <img src="img/boot3.png">
 <img src="img/boot4.png">
